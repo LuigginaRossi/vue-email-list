@@ -24,15 +24,15 @@
     solamente quando sono stati tutti generati. -->
 
     <div id="app" >
-        <h1 class="py-4">Vue Email List</h1>
+        <h1 class="pt-4">Vue Email List</h1>
         
         <button class="btn btn-danger my-5" @click="generateMails">Generate email</button>
-
-        <ul>
-            <li v-for="(mail, i) in temporaryMails" :key="i + mail">
-                <a href="#"> {{temporaryMails[i]}} </a>
-            </li>
-        </ul>
+       
+        <div class="list-group">
+            <div class="list-group-item" v-for="(mail, i) in mails" :key="i + mail">
+                {{mails[i]}}
+            </div>  
+       </div>
     </div>
 
     <!-- <script src="utilities.js"></script> -->

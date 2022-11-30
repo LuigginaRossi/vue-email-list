@@ -17,6 +17,10 @@ const app = createApp({
             
             this.temporaryMails.push(response.data.response);
 
+                if(this.temporaryMails.length === 10){
+                    this.mails = this.temporaryMails;
+                };
+                
             });
         },
         generateMails () { 
