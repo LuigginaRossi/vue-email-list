@@ -17,15 +17,16 @@ const app = createApp({
             
             this.temporaryMails.push(response.data.response);
 
+
                 if(this.temporaryMails.length === 10){
-                    this.mails = this.temporaryMails;
+                    this.mails.push(...this.temporaryMails) ;
                 };   
                
             });
         },
         generateMails () {   
-            this.termporaryMails = [];
-            this.mails= [];
+            this.temporaryMails = [];
+            // // this.mails= [];
 
             for (let i = 0; i < 10; i ++) {  
                 this.fechtData();
