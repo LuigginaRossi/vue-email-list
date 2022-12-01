@@ -19,15 +19,19 @@ const app = createApp({
 
                 if(this.temporaryMails.length === 10){
                     this.mails = this.temporaryMails;
-                };
-                
+                };   
+
             });
         },
-        generateMails () { 
+        generateMails () {   
             for (let i = 0; i < 10; i ++) {  
                 this.fechtData();
-            };
+            };    
         },
+        // deleteArray(){
+        //     this.termporaryMails = [];
+        //     console.log(this.temporaryMails)
+        // }
     },
     mounded(){
     },    
