@@ -20,18 +20,18 @@ const app = createApp({
                 if(this.temporaryMails.length === 10){
                     this.mails = this.temporaryMails;
                 };   
-
+               
             });
         },
         generateMails () {   
+            this.termporaryMails = [];
+            this.mails= [];
+
             for (let i = 0; i < 10; i ++) {  
                 this.fechtData();
             };    
+           
         },
-        // deleteArray(){
-        //     this.termporaryMails = [];
-        //     console.log(this.temporaryMails)
-        // }
     },
     mounded(){
     },    
